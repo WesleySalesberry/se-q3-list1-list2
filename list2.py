@@ -29,9 +29,9 @@ __author__ = "Wesley Salesberry"
 
 
 def remove_adjacent(nums):
-    new_list = [nums[element] for element in range(
+    my_list = [nums[element] for element in range(
         len(nums)) if nums[element] != nums[element-1]]
-    return new_list
+    return my_list
 
 
 # E. zip_merge

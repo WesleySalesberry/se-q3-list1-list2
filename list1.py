@@ -48,9 +48,9 @@ def match_ends(words):
 
 
 def front_x(words):
-    words = sorted(words)
-    shifted_words = words[-2:] + words[:-2]
-    return shifted_words
+    word = sorted(words)
+    shifted_word = word[-2:] + words[:-2]
+    return shifted_word
     # for element in words:
     #   if element[0] == 'x':
     #     if len(element) == element:
