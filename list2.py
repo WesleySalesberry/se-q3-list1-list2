@@ -5,7 +5,8 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+import heapq
+__author__ = "Wesley Salesberry"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -28,8 +29,9 @@ __author__ = "???"
 
 
 def remove_adjacent(nums):
-    # your code here
-    return
+    new_list = [nums[element] for element in range(
+        len(nums)) if nums[element] != nums[element-1]]
+    return new_list
 
 
 # E. zip_merge
@@ -43,8 +45,9 @@ def remove_adjacent(nums):
 
 
 def zip_merge(list1, list2):
-    # your code here
-    return
+    new_list = [''.join(map(str, element)) for element in zip(list1, list2)]
+
+    return new_list
 
 
 # F. empty_filter
@@ -57,8 +60,22 @@ def zip_merge(list1, list2):
 
 
 def empty_filter(list1):
-    # your code here
-    return
+    for element in list1:
+        if element == '' or element == None:
+            list1.remove(element)
+
+    return list1
+
+# could not get it to work
+    # def empty_filter(list1):
+
+    # if "" in list1 or None in list1:
+    #   return True
+    # else:
+    #   return False
+
+    # filteredList = filter(empty_filter, list1)
+    # print(filteredList)
 
 
 # G. linear_merge
@@ -71,10 +88,9 @@ def empty_filter(list1):
 # linear time and the two lists are already provided in
 # ascending sorted order.
 
-
 def linear_merge(list1, list2):
-    # your code here
-    return
+    new_list = list(heapq.merge(list1, list2))
+    return new_list
 
 
 # Provided simple test() function used in main() to print
