@@ -5,7 +5,7 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-import heapq
+
 __author__ = "Wesley Salesberry"
 
 # Copyright 2010 Google Inc.
@@ -65,17 +65,6 @@ def empty_filter(list1):
             list1.remove(element)
 
     return list1
-
-# could not get it to work
-    # def empty_filter(list1):
-
-    # if "" in list1 or None in list1:
-    #   return True
-    # else:
-    #   return False
-
-    # filteredList = filter(empty_filter, list1)
-    # print(filteredList)
 
 
 # G. linear_merge
