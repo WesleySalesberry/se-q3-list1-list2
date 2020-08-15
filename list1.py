@@ -51,9 +51,6 @@ def front_x(words):
     words = sorted(words)
     shifted_words = words[-2:] + words[:-2]
     return shifted_words
-    # for element in words:
-    #   if element[0] == 'x':
-    #
 
 
 # C. sort_last
@@ -67,7 +64,7 @@ def front_x(words):
 
 def sort_last(tuples):
 
-    tuples.sort(key=lambda x: x[1])
+    tuples.sort(key=lambda x: x[-1])
     return tuples
 
 
