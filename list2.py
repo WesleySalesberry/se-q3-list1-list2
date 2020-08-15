@@ -5,6 +5,7 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
+import heapq
 __author__ = "Wesley Salesberry"
 
 # Copyright 2010 Google Inc.
@@ -78,8 +79,8 @@ def empty_filter(list1):
 
 
 def linear_merge(list1, list2):
-    # your code here
-    return
+    new_list = list(heapq.merge(list1, list2))
+    return new_list
 
 
 # Provided simple test() function used in main() to print
