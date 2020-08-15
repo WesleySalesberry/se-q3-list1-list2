@@ -77,7 +77,6 @@ def empty_filter(list1):
 # linear time and the two lists are already provided in
 # ascending sorted order.
 
-
 def linear_merge(list1, list2):
     new_list = list(heapq.merge(list1, list2))
     return new_list
