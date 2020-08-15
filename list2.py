@@ -5,7 +5,7 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-
+import heapq
 __author__ = "Wesley Salesberry"
 
 # Copyright 2010 Google Inc.
